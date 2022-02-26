@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 表格 border为表格边框，数值越大，则越粗，而且不能用style:border，th代表表头，会加粗。td代表内容，tr为行-->
+    <table border="1">
+        <tr>
+            <!-- colspan 合并，让这个表头跨行 -->
+            <th colspan="2">表头1</th>
+            <td>第一行第一个</td>
+        </tr>
+        <tr>
+            <td>第二行第一个</td>
+            <td>第二行第二个</td>
+            <td>第二行第三个</td>
+        </tr>
+
+        <tr>
+            <th>表头3</th>
+            <!-- no-breaking 空格，用于占位，有些浏览器如果仅仅是空的话显示会不正常 -->
+            <td>&nbsp;</td>
+            <td>第二行第二个</td>
+        </tr>
+    </table>
+</body>
+
+</html>

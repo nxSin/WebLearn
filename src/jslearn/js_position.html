@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- js存在的位置 head中-->
+    <script>
+        function clickChangeStyle() {
+            document.getElementById("demo1").style.color="black";
+        }
+    </script>
+</head>
+
+<body>
+
+    <p>显示一个文字样式的修改</p>
+    <p id="demo1" style="color: aqua;">显示一个文字样式的修改</p>
+    <button type="button" onclick="clickChangeStyle()">点击我，改样式</button>
+
+    <!-- body中,如果在body底部，可以加速页面的显示 -->
+    <script>
+        function clickChangeContent() {
+            document.getElementById("demo1").innerHTML="change content";
+        }
+    </script>
+</body>
+
+</html>

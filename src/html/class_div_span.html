@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 给milk的类定义 */
+        .milk{
+            background-color: black;
+            color: white;
+        }
+        /* 如果制定了某个标签再.类的话，就只对这个标签里的定义类有效 */
+        span.red{
+            color: brown;
+        }
+        /* id使用#号定义 */
+        #nav{
+            width: 200px;
+            height: 200px;
+            /* 浮动的目的是为了提升层面，让不受原布局流控制，达到可以看起来两个div在同一行（实际已经不在同一层面） */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- div用milk类 -->
+    <div class="milk">
+        <h2>纯牛奶</h2>
+        <p>纯牛奶是好东西啊</p>
+    </div>
+
+    <div class="milk">
+        <h2>花生奶</h2>
+        <p>花生奶也是好东西啊</p>
+    </div>
+
+    <div>
+        <p class="red">段落</p>
+        <span class="red">span定义红色类</span>
+    </div>
+
+
+    <!-- 2. div来布局 -->
+    <div id="nav">
+        <p>第一点</p>
+        <p>第二点</p>
+        <p>第三点</p>
+    </div>
+
+    <div>
+        <p>我的城市是一个美丽的城市，值得人尊敬</p>
+    </div>
+</body>
+</html>
