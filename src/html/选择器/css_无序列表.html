@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无序列表选择器</title>
+    <style type="text/css">
+        /* 后代选择器 ul */
+        .city ul{
+            /* 设置符号类型无，则没有小点 */
+            /* list-style-type: none; */
+        }
+
+        /* list-style-position 代表的是符号点在框内还是外 */
+        .city ul li{
+            border: 1px solid red;
+            height: 24px;
+            line-height: 24px;/* 跟height一样，垂直居中 */
+            /* list-style-position: inside;  */
+        }
+
+        /* list-style-image 指定符号的图片 */
+        .city ul li{
+            list-style-image: url(https://www.w3school.com.cn/i/eg_cute.gif); 
+        }
+    </style>
+</head>
+
+<body>
+    <h2>无序列表选择器：</h2>
+    <div class="city">
+        <ul>
+            <li>北京</li>
+            <li>上海</li>
+            <li>重庆</li>
+            <li>深圳</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

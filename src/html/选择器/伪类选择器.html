@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style type="text/css">
+        /* 必须按照以下顺序定义，否则不起作用 */
+        /* 默认 */
+        /* .test a:link {
+            color: #000;
+        } */
+
+        /* 被访问 */
+        /* .test a:visited {
+            color: gray;
+        } */
+
+        /* 鼠标放上去 */
+        /* .test a:hover {
+            color: gold;
+        } */
+
+        /* .test a:active {
+            color: aqua;
+        } */
+
+        /* 美化 */
+        .test a:link,a:visited {
+            text-decoration: none; /* 文字不带下划线 */
+            color: #000;
+        }
+        .test a:hover {
+            color: gold;
+            text-decoration: underline;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+    <base target="_blank" />
+</head>
+
+<body>
+    <div class="test">
+        <ul>
+            <li> <a href="http://www.baidu.com">baidu</a></li>
+            <li><a href="http://www.360.com">360</a></li>
+            <li><a href="http://www.tengxun.com">tengxun</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
