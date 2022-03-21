@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类型转换</title>
+</head>
+<body>
+    
+    <script>
+
+        /* 1. 其他类型转字符串 */
+        var a=5;
+        /* 以下三中方式都可以： */
+        console.log(a.toString());
+        console.log(String(a));
+        console.log("" + a);
+
+        /* 2. 数值型 */
+        // 第一种方式 ：
+        console.log(Number("0"),Number("h0"),Number("123h"),Number(null),Number(undefined),Number(true));
+
+        //第二种方式
+        console.log(parseInt("0"),parseInt("h0"),parseInt("123h"),parseInt(null),parseInt(undefined),parseInt(true));
+
+        //转float
+        console.log(parseFloat("0"),parseFloat("h0"),parseFloat("123h"),parseFloat(null),parseFloat(undefined),parseFloat(true));
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display属性</title>
+
+    <style type="text/css">
+        span{
+            width: 100px;
+            height: 100px;
+            /* 这一行将行内元素转为了块级元素,转后，上面的宽高才有效了 */
+            display: block;
+
+            border: 1px red solid;
+        }
+        .span2{
+            margin-top: 20px;
+        }
+
+        .div1,.div2,.div3{
+            /* 将div变成了 行业元素，它们就在一行了，同时宽高没有了作用*/
+            width: 100px;
+            height: 100px;
+            border: 1px red solid;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 默认情况下，它俩是在一行的 -->
+    <span class="span1">元素1</span>
+    <span class="span2">元素2</span>
+
+    <!-- 默认情况下它们各站一行 -->
+    <div class="div1">盒子1</div>
+    <div class="div2">盒子2</div>
+    <div class="div3">盒子3</div>
+</body>
+</html>

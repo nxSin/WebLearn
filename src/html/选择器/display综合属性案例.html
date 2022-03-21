@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display综合属性案例</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: bisque;
+        }
+
+        /* 让整个盒子居中 */
+        .divc {
+            width: 800px;
+            height: 40px;
+            margin: 100px auto;
+        }
+        
+        /* 让列表到一行并有个颜色*/
+        .divc ul li{
+            float: left;
+            list-style-type: none;
+            width: 160px;
+            height: 40px;
+            /* 使其垂直居中*/
+            line-height: 40px;
+            text-align: center;
+            background-color: greenyellow;
+        }
+
+        /* 设置超链接行内元素为块，这样才能有宽高，能让按到的效果扩大 */
+        .divc ul li a{
+            width: 160px;
+            height: 40px;
+            display: block;
+        }
+
+        /* 设置超链接按钮默认和点击后状态 */
+        .divc ul li a:link, .divc ul li a:visited{
+            /* 文字去掉下划线 */
+            text-decoration: none;
+        }
+
+        /* 设置点击效果 */
+        .divc ul li a:hover{
+            text-decoration: none;
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="divc">
+        <ul>
+            <li><a href="#">网站属性1</a></li>
+            <li><a href="#">网站属性2</a></li>
+            <li><a href="#">网站属性3</a></li>
+            <li><a href="#">网站属性4</a></li>
+            <li><a href="#">网站属性5</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

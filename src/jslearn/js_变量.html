@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js变量</title>
+</head>
+<body>
+
+    <script>
+        /* 字符串特殊字符 */
+        var str = "我的\"小宝贝\"";
+        // alert(str);
+
+
+        /* 控制台打印 */
+        console.log(str.length);
+
+        var str1 = 123;
+        var str2 = 12;
+        var str3 = str2+ str1 + str;
+        /* 加号从前往后运算：如果两个都是数值型，就都当数值运算，直到遇到一个字符串，此后所有加号都是字符串 */
+        console.log("str3: " + str3);
+
+        /* 变量没赋值代表： undefined */
+        var undV;
+        /* null：代表空对象，但是要手动赋值 */
+        var object = null;
+
+        /* 打印数据类型 */
+        var typeStr1 = typeof str;
+        /* 打印  string */
+        console.log(typeStr1);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin居中</title>
+    <style type="text/css">
+
+        div{
+            width: 500px;
+            height: 200px;
+            border-style: solid;
+            border-color: red;
+            border-width: 1px;
+
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+
+            text-align: center;
+
+            /* 浮动后则不能再居中 */
+            /* float: left; */
+        }
+
+        .spans{
+            border: 1px red solid;
+            padding: 20px 20px;
+            /* 行内元素不能设置宽 */
+            /* width: 100px; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">margin不能让文本居中，text-align可以</div>
+    
+    <span class="spans">行内元素</span>
+</body>
+</html>

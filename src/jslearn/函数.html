@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+</head>
+
+<body>
+
+    <script>
+
+        /* 函数式声明 */
+        function fun1(a) {
+            console.log(a);
+        }
+        /* 变量式声明 */
+        var fun2 = function (a, b) {
+            return a + b;
+        }
+
+        console.log(fun2(3, 4));
+
+        //自调用函数
+        // (function(){
+        //     alert(124);
+        // })();
+
+        ///* t测试 */
+        //这里会发生：变量提升 出现  var t1; 没有进行声明赋值，那么会被下面的函数声明覆盖
+        console.log(t1);
+        function t1() {
+            console.log(2);
+        }
+
+        //这里对 t1重新赋值，所以下面打印3
+        var t1 = 3;
+        console.log(t1);
+        ///* t测试 */
+
+    </script>
+</body>
+
+</html>
